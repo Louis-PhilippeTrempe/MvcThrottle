@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -288,9 +289,12 @@ namespace MvcThrottle
 
             var id = string.Join("_", keyValues);
             var idBytes = Encoding.UTF8.GetBytes(id);
-            var hashBytes = new System.Security.Cryptography.SHA1Managed().ComputeHash(idBytes);
-            var hex = BitConverter.ToString(hashBytes).Replace("-", "");
-            return hex;
+            using (SHA256 mySHA256 = SHA256.Create())
+            {
+                var hashBytes = mySHA256.ComputeHash(idBytes);
+                var hex = BitConverter.ToString(hashBytes).Replace("-", "");
+                return hex;
+            }
         }
 
         private string RetryAfterFrom(DateTime timestamp, RateLimitPeriod period)
