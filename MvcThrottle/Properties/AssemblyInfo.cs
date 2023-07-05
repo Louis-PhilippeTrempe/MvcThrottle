@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MvcThrottle")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("MvcThrottle with FIPS")]
+[assembly: AssemblyDescription("New version of MVCThrottle by Stefan Prodan with FIPS compliance functionality")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("stefanprodan.com")]
-[assembly: AssemblyProduct("MvcThrottle")]
-[assembly: AssemblyCopyright("Copyright © Stefan Prodan 2017")]
+[assembly: AssemblyCompany("Louis-Philippe Trempe")]
+[assembly: AssemblyProduct("MvcThrottle with FIPS")]
+[assembly: AssemblyCopyright("MIT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.1.3.0")]
-[assembly: AssemblyFileVersion("2.1.3.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
