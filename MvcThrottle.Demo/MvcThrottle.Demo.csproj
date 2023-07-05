@@ -286,9 +286,9 @@
     <Content Include="Views\Blog\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvcThrottle\MvcThrottle.csproj">
+    <ProjectReference Include="..\MvcThrottle\MvcThrottleWithFIPS.csproj">
       <Project>{17c09440-ddbf-44b8-8410-c888525e9ca5}</Project>
-      <Name>MvcThrottle</Name>
+      <Name>MvcThrottleWithFIPS</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
